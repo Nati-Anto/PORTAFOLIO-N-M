@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">NATALIA</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>NATALIA MOREIRA</h1>
+            <h2>Desarrollo Full Stack</h2>
+            <div class="redes">
+                <a href="tel:+54 01125550740" target="_blank" title="Teléfono"> <i class="fas fa-phone-alt"></i> Telefono</a>
+                <a href="mailto:natii_moreira@hotmail.com" target="_blank" title="Gmail"><i class="fas fa-envelope"></i> Gmail</a></li>
+                <a href="https://github.com/Nati-Anto" target="_blank" title="GitHub"><i class="fab fa-github"></i> GitHub</a></li>
+                <a href="https://www.linkedin.com/in/natalia-moreira-gonzalez" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                 
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Natalia.</span>Una apasionada desarrolladora Full Stack Junior con formación especializada en Desarrollo de Software en Soy Henry. Me apasiona la creación de soluciones digitales innovadoras que fusionan funcionalidad y diseño para ofrecer experiencias únicas. Mi enfoque se centra en la construcción de aplicaciones robustas y escalables que no solo satisfacen las necesidades del usuario, sino que también superan sus expectativas. Estoy comprometida con el aprendizaje continuo y la mejora constante, explorando nuevas tecnologías y metodologías para mantenerme al tanto de las últimas tendencias en desarrollo de software. ¡Explora mi portafolio y descubre cómo puedo aportar valor a tu próximo proyecto!
+
+            </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            18-09-1993
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +54 011 25550740
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            natii_moreira@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Lanus Este, Buenos Aires Argentina
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="https://nati-anto.github.io/CV/" target="_blank" rel="noopener noreferrer">CV</a>
+            </button>
+        </div>
+    </section>
+
+    
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollo Full Stack Developer</h4>
+                        <span class="casa">BootCamp Soy Henry</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p> Me especialicé en HTML, CSS y JavaScript. Aprendí a usar frameworks como React para aplicaciones frontend y desarrollé APIs con Node.js y Express para el backend. Participé en proyectos prácticos que mejoraron mis habilidades técnicas.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Cursos online(HTML, CSS Y JavaScript) </h4>
+                        <span class="casa">jon Mircha</span>
+                        <span class="fecha">2023 - 2023</span>
+                        <p>Durante mi aprendizaje autodidacta en desarrollo web, completé un curso exhaustivo en YouTube impartido por un reconocido youtuber especializado en HTML, CSS (incluyendo unidades y estilos avanzados), y JavaScript. Este curso me proporcionó una base sólida en las tecnologías fundamentales para la creación de interfaces web dinámicas y responsivas. A lo largo del curso, desarrollé habilidades en la estructuración semántica del contenido con HTML, el diseño estilizado y adaptable con CSS, y la implementación de funcionalidades interactivas con JavaScript.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Cajera</h4>
+                        <span class="casa">Mayorista Makro</span>
+                        <span class="fecha">2019 - 2020</span>
+                        <p> Procesamiento eficiente de transacciones financieras y manejo de pagos.
+                            Interacción directa con clientes para proporcionar un servicio al cliente excepcional.
+                            Mantenimiento de registros precisos de las transacciones diarias.
+                            Manejo de tecnología de punto de venta (POS) y sistemas informáticos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Administración</h4>
+                        <span class="casa">Supermercado Superar</span>
+                        <span class="fecha">2014 - 2015</span>
+                        <p> Habilidades avanzadas de atención al cliente y comunicación.
+                            Capacidad para trabajar bajo presión y manejar situaciones desafiantes.
+                            Familiaridad con sistemas informáticos y tecnología de POS.
+                            Cumplimiento de estándares de precisión y eficiencia en operaciones diarias.
+                            </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form action="send_mail.php" method="POST">
+                        <input type="text" name="nombre" placeholder="Tú Nombre" required>
+                        <input type="tel" name="telefono" placeholder="Número telefónico">
+                        <input type="email" name="correo" placeholder="Dirección de correo" required>
+                        <input type="text" name="tema" placeholder="Tema">
+                        <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+                        <button type="submit">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Lanus Este, Buenos Aires Argentina
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Telefono:+54 011 25550740
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: natii_moreira@hotmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fas fa-phone-alt"></i></a>
+            <a href="#"><i class="fa-brands fas fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
