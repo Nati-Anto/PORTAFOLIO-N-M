@@ -25,13 +25,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $cabeceras = "From: $nombre <$correo>";
 
     // Enviar el correo electrónico
+   
     if (mail($destinatario, $asunto, $contenido, $cabeceras)) {
         // Redirigir a una página de agradecimiento si se envía correctamente
         header('Location: gracias.html');
         exit;
     } else {
         // Mostrar un mensaje de error si hay un problema con el envío del correo
-        echo "Hubo un problema al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.";
+        die("Hubo un problema al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.");
     }
+    
 }
 ?>
